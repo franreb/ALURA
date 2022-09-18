@@ -1,0 +1,66 @@
+<canvas width="600" height="400"></canvas>
+
+<script>
+	
+	// var pantalla = document.querySelector("canvas");
+	// var pincel = pantalla.getContext("2d");
+
+	// pincel.fillStyle = "lightgrey";
+	// pincel.fillRect(0,0,50,50) //funcion
+	// pincel.strkeStrike = "black";
+	// pincel.strokeRect(0,0,50,50);
+
+	// pincel.fillStyle = "lightgrey";
+	// pincel.fillRect(50,0,50,50) //funcion
+	// pincel.strkeStrike = "black";
+	// pincel.strokeRect(50,0,50,50);
+
+	// pincel.fillStyle = "lightgrey";
+	// pincel.fillRect(0,0,50,50) //funcion
+	// pincel.strkeStrike = "black";
+	// pincel.strokeRect(100,0,50,50);
+
+	// pincel.fillStyle = "lightgrey";
+	// pincel.fillRect(0,0,50,50) //funcion
+	// pincel.strkeStrike = "black";
+	// pincel.strokeRect(150,0,50,50);
+
+	// pincel.fillStyle = "lightgrey";
+	// pincel.fillRect(0,0,50,50) //funcion
+	// pincel.strkeStrike = "black";
+	// pincel.strokeRect(200,0,50,50);
+
+
+	function dibujarCuadrado(x,y,color){
+
+		var pantalla = document.querySelector("canvas");
+		var pincel = pantalla.getContext("2d");
+
+		pincel.fillStyle = color;
+		pincel.fillRect(x,y,50,50)
+		pincel.strkeStrike = "black";
+		pincel.strokeRect(x,y,50,50);
+
+		}	
+
+	
+	for(var x = 0; x < 600; x = x + 50){
+
+		dibujarCuadrado(x,0,"red");
+		dibujarCuadrado(x,50,"green");
+		dibujarCuadrado(x,100,"yellow");
+		dibujarCuadrado(x,150,"blue");
+
+
+	}
+	// dibujarCuadrado(0,0,"red");
+	// dibujarCuadrado(0,50,"green");
+	// dibujarCuadrado(0,100,"yellow");
+	// dibujarCuadrado(0,150,"blue");
+
+	
+
+
+
+
+</script>

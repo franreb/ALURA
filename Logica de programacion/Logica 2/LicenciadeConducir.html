@@ -1,0 +1,40 @@
+<meta charset="UTF-8">
+
+<script>
+    function saltarLinea() {
+        document.write("<br>");
+    }
+
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+
+    var edad = parseInt(prompt("¿Cuál es tu edad?"));
+    
+
+    if (edad >= 18){
+
+        imprimir("Tienes la edad para conducir")
+
+        var tieneLicencia = prompt("¿Tienes licencia? Responde S o N");
+
+        if (tieneLicencia == "S" || tieneLicencia == "s"){
+
+            imprimir("Puedes Conducir! Recuerda respetar las normas de transito :)")
+
+        }     
+
+        else {
+
+        imprimir("Debes tener licencia para poder Conducir")
+        
+        }
+    }
+
+    else {
+
+        imprimir("Solo puede conducir un persona que sea mayor de 18")
+    }
+
+</script>

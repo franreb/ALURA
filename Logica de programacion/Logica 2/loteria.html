@@ -1,0 +1,42 @@
+<meta charset="UTF-8">
+<h1>PROGRAMA - Juego de Adivinación</h1>
+
+<script>
+
+    function  saltarLinea(){
+
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+
+    }
+
+    function imprimir(frase) {
+
+        document.write(frase);
+        saltarLinea();
+
+    }
+
+
+    function sorteo(n) { 
+        
+        return (sorteado = Math.round(Math.random()*n));
+        
+    }   
+
+    var n = prompt("Ingrese un numero Maximo: ")
+    var numeroPensado = sorteo(n)
+    var numeroLanzado = parseInt(prompt("Ingrese un número entra 0-" + n))
+
+    if (numeroPensado == numeroLanzado){
+
+        imprimir("Usted Acerto !!")
+    }
+
+    if (numeroPensado != numeroLanzado){
+
+        imprimir("Usted se Equivoco siga participando! el numero sorteado fue :" + numeroPensado)
+    }
+
+</script>

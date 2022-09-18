@@ -1,0 +1,16 @@
+.piede_pagina{
+    background: #bfbfbf;
+    color: #fdfdfd;
+    text-align: right;
+    padding: 1.5625rem 5rem;
+
+}
+
+@media screen and (min-width: 0) {
+    
+}
+
+
+@media screen and (min-width: 768px) {
+    
+}

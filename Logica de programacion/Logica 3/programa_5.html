@@ -1,0 +1,87 @@
+<canvas width="600" height="400"> </canvas>
+
+<script>
+
+    var pantalla = document.querySelector("canvas");
+    var pincel = pantalla.getContext("2d");    
+    pincel.fillStyle = "grey";
+    pincel.fillRect(0,0,600,400); 
+    var resta = true;
+
+    function disenarCircunferencia(x,y,radio,color){
+
+    	pincel.fillStyle = color;
+    	pincel.beginPath();
+    	pincel.arc(x,y,radio,0,2*Math.PI);
+    	pincel.fill();
+
+
+    }
+
+    function limpiarPantalla(){
+
+    	pincel.clearRect(0,0,600,400);
+    }
+
+    
+    function exibirMensaje(){
+
+    	console.log("mostar Mensaje");
+
+    }
+    setInterval(actualizarPantalla,10);
+
+
+
+
+   function actualizarPantalla(){
+
+   	limpiarPantalla();
+   	disenarCircunferencia(x,20,10)
+   	
+
+   	while (resta){
+
+   		x++;
+
+   	if(x == 600){
+
+   		resta = false;
+
+   	}	
+
+   	break;
+
+
+   	}
+
+   	while (!resta){
+
+   		x--;
+
+   	if(x == 0){
+
+   		resta = true;
+
+   	}	
+
+   	break;
+
+
+   	}
+
+   }
+
+
+   var x = 0;
+
+</script> 
+
+
+
+
+
+
+
+
+

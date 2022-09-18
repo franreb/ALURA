@@ -1,0 +1,24 @@
+*{
+	background: #cccccc;
+	margin: 0px;
+	padding: 0px;
+	font-family: "Inter" sans-serif;
+	font-weight: 400;
+	font-size: 32px;
+	line-height: 150%;
+}
+
+main{
+	display: flex;
+
+}
+
+.input-text{
+	margin-top: 90px;
+}
+
+.input-text-area{
+	position: relative;
+	margin-top: 20px;
+	margin-left: 90px;
+}
